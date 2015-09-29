@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TodayExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbl_time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxz-Mr-8P2">
+                                <rect key="frame" x="267" y="133" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbl_city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYr-QA-m4b">
+                                <rect key="frame" x="267" y="319" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="lbl_temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-qK-SKs">
+                                <rect key="frame" x="267" y="222" width="66" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0lc-qK-SKs" secondAttribute="centerX" id="7dT-Fq-bgC"/>
+                            <constraint firstItem="CYr-QA-m4b" firstAttribute="top" secondItem="0lc-qK-SKs" secondAttribute="bottom" constant="79" id="CBL-Sl-bob"/>
+                            <constraint firstItem="CYr-QA-m4b" firstAttribute="leading" secondItem="mxz-Mr-8P2" secondAttribute="leading" id="KMf-TO-SHz"/>
+                            <constraint firstAttribute="centerX" secondItem="mxz-Mr-8P2" secondAttribute="centerX" id="MYi-NT-CWB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CYr-QA-m4b" secondAttribute="bottom" constant="260" id="Sza-ur-wZz"/>
+                            <constraint firstItem="CYr-QA-m4b" firstAttribute="leading" secondItem="0lc-qK-SKs" secondAttribute="leading" id="alS-HW-1Uw"/>
+                            <constraint firstItem="0lc-qK-SKs" firstAttribute="top" secondItem="mxz-Mr-8P2" secondAttribute="bottom" constant="68" id="mu5-YM-9gh"/>
+                            <constraint firstAttribute="centerX" secondItem="CYr-QA-m4b" secondAttribute="centerX" id="rza-Uq-P5V"/>
+                            <constraint firstItem="mxz-Mr-8P2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="113" id="yyd-d2-BRi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblCity" destination="CYr-QA-m4b" id="n4z-3e-Cfg"/>
+                        <outlet property="lblTemp" destination="0lc-qK-SKs" id="LGu-uN-e28"/>
+                        <outlet property="lblTime" destination="mxz-Mr-8P2" id="7UR-AU-3rC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="471"/>
         </scene>
     </scenes>
 </document>
