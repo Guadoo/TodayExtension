@@ -14,9 +14,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>weatherDataKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>940472541BC6AEAC004BB0BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9404725E1BC6AEAC004BB0BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>94D964B81BBADB7500436252</key>
 		<dict>
 			<key>primary</key>

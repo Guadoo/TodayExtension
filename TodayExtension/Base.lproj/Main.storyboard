@@ -34,15 +34,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTr-Ha-RGd">
+                                <rect key="frame" x="274" y="400" width="53" height="30"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IZv-ES-w0r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0lc-qK-SKs" secondAttribute="centerX" id="7dT-Fq-bgC"/>
                             <constraint firstItem="CYr-QA-m4b" firstAttribute="top" secondItem="0lc-qK-SKs" secondAttribute="bottom" constant="79" id="CBL-Sl-bob"/>
                             <constraint firstItem="CYr-QA-m4b" firstAttribute="leading" secondItem="mxz-Mr-8P2" secondAttribute="leading" id="KMf-TO-SHz"/>
+                            <constraint firstAttribute="centerX" secondItem="WTr-Ha-RGd" secondAttribute="centerX" id="Kp1-Zb-GHE"/>
                             <constraint firstAttribute="centerX" secondItem="mxz-Mr-8P2" secondAttribute="centerX" id="MYi-NT-CWB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CYr-QA-m4b" secondAttribute="bottom" constant="260" id="Sza-ur-wZz"/>
                             <constraint firstItem="CYr-QA-m4b" firstAttribute="leading" secondItem="0lc-qK-SKs" secondAttribute="leading" id="alS-HW-1Uw"/>
+                            <constraint firstItem="WTr-Ha-RGd" firstAttribute="top" secondItem="CYr-QA-m4b" secondAttribute="bottom" constant="60" id="gzP-RQ-4oS"/>
                             <constraint firstItem="0lc-qK-SKs" firstAttribute="top" secondItem="mxz-Mr-8P2" secondAttribute="bottom" constant="68" id="mu5-YM-9gh"/>
                             <constraint firstAttribute="centerX" secondItem="CYr-QA-m4b" secondAttribute="centerX" id="rza-Uq-P5V"/>
                             <constraint firstItem="mxz-Mr-8P2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="113" id="yyd-d2-BRi"/>
